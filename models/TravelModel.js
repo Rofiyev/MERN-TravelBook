@@ -4,6 +4,7 @@ const TravelModel = new Schema({
   title: {
     type: String,
     required: true,
+    minLength: 3,
   },
   description: {
     type: String,
@@ -11,6 +12,10 @@ const TravelModel = new Schema({
   },
   image: {
     type: String,
+    required: true,
+  },
+  created_date: {
+    type: Date,
     required: true,
   },
 });
